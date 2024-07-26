@@ -23,4 +23,6 @@ public class User {
     private Date registrationDate;
 
     private Date lastUpdateDate;
+
+    private String password;
 }

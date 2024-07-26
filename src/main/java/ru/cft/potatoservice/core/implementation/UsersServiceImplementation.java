@@ -14,7 +14,12 @@ public class UsersServiceImplementation implements UsersService {
     private final UserRepository repository;
 
     @Override
-    public List<User> get() {
-        return repository.get();
+    public List<User> get(int id) {
+        return repository.get(id);
+    }
+
+    @Override
+    public void addUser(User user) {
+        repository.addUser(user);
     }
 }
