@@ -22,7 +22,6 @@ public class UsersController {
     }
 
     @PostMapping("addUser")
-    @ResponseBody
     public String addUser(@RequestBody User user){
         service.addUser(user);
 
